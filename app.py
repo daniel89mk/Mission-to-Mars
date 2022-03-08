@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect 
 from flask_pymongo import PyMongo
 import scraping
 
@@ -29,11 +29,12 @@ def scrape():
     # In the query_parameter, it can be left empty {} to update the first matching document in the collection
     # {"$set":data} means the document will be modified ("$set") with the data in question
     # upsert=True means telling Mongo to create a new document if one doesn't already exist, and new data will always be saved
-    mars.update_one({}, {"$set":mars_data}, upsert=True)
+    mars.insert_one(mars_data)
+    #mars.update_one({}, {"$set":mars_data}, upsert=True)
     # navigate our page back to / where we can see the updated content
     return redirect('/', code=302)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
 
