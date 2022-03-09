@@ -10,6 +10,7 @@ wanted me to help her on this task.
 
 
 
-### My web page looks like:
+### Result after everything is done and a little of polish
+#### My web app looks like:
 ![myweb_1](myweb_1.png)
 ![myweb_2](myweb_2.png)
