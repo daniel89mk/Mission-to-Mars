@@ -12,5 +12,6 @@ wanted me to help her on this task.
 
 ### Result after everything is done and a little of polish
 #### My web app looks like:
+  - A header, Mars Fact, Mars News, and More Hemispheres
 ![myweb_1](myweb_1.png)
 ![myweb_2](myweb_2.png)
